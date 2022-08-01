@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    background-color: blanchedalmond;
+    font-family: "Calibri", "Roboto", sans-serif;
+}
+
+.stick {
+    display: block;  
+    text-align: center;
+    position: sticky;
+}
+
+.chat-container {
+    position: absolute;
+    width: calc(100% - 20px);
+    max-width: 800px;
+    height: 480px;
+    border-radius: 25px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: sandybrown;
+    overflow: hidden;
+}
+  
+#messages {
+    position: relative;
+    list-style: none;
+    padding: 20px 10px 40px 10px;
+    margin: 0;
+    height: 350px;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: mediumaquamarine;
+}
